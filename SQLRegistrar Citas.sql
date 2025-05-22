@@ -18,7 +18,7 @@ CREATE TABLE Especialidad (
 );
 GO
 
--- Tabla CentroSalud (7 atributos)
+-- Tabla CentroSalud 
 CREATE TABLE CentroSalud (
     id_centro INT IDENTITY(1,1) PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE CentroSalud (
 );
 GO
 
--- Tabla Paciente (7 atributos)
+-- Tabla Paciente 
 CREATE TABLE Paciente (
     id_paciente INT IDENTITY(1,1) PRIMARY KEY,
     dni VARCHAR(15) NOT NULL UNIQUE,
@@ -45,7 +45,7 @@ CREATE TABLE Paciente (
 );
 GO
 
--- Tabla PersonalMedico (7 atributos)
+-- Tabla PersonalMedico 
 CREATE TABLE PersonalMedico (
     id_medico INT IDENTITY(1,1) PRIMARY KEY,
     cmp VARCHAR(20) NOT NULL UNIQUE,
@@ -59,7 +59,7 @@ CREATE TABLE PersonalMedico (
 );
 GO
 
--- Tabla HistorialClinico (7 atributos)
+-- Tabla HistorialClinico 
 CREATE TABLE HistorialClinico (
     id_historial INT IDENTITY(1,1) PRIMARY KEY,
     fecha DATE NOT NULL,
@@ -74,7 +74,7 @@ CREATE TABLE HistorialClinico (
 );
 GO
 
--- Tabla CitaMedica (7 atributos)
+-- Tabla CitaMedica 
 CREATE TABLE CitaMedica (
     id_cita INT IDENTITY(1,1) PRIMARY KEY,
     fecha DATE NOT NULL,
@@ -90,7 +90,7 @@ CREATE TABLE CitaMedica (
 );
 GO
 
--- Tabla ReporteEstadistico (7 atributos)
+-- Tabla ReporteEstadistico 
 CREATE TABLE ReporteEstadistico (
     id_reporte INT IDENTITY(1,1) PRIMARY KEY,
     tipo VARCHAR(50) NOT NULL,
@@ -104,7 +104,7 @@ CREATE TABLE ReporteEstadistico (
 );
 GO
 
--- Tabla Usuario (7 atributos)
+-- Tabla Usuario 
 CREATE TABLE Usuario (
     id_usuario INT IDENTITY(1,1) PRIMARY KEY,
     username VARCHAR(30) NOT NULL UNIQUE,
